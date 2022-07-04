@@ -1344,6 +1344,11 @@
     "@jridgewell/resolve-uri" "^3.0.3"
     "@jridgewell/sourcemap-codec" "^1.4.10"
 
+"@ptomasroos/react-native-multi-slider@^2.2.2":
+  "integrity" "sha512-HWyCnRD3Z3SbHK2FLWYmBBqd1B4iXipeKv1+AK0FoY/CElEDTEixHE8hN60TsqxalPrznn798LE2Q4tHuCiyaA=="
+  "resolved" "https://registry.npmjs.org/@ptomasroos/react-native-multi-slider/-/react-native-multi-slider-2.2.2.tgz"
+  "version" "2.2.2"
+
 "@react-native-async-storage/async-storage@^1.17.7":
   "integrity" "sha512-mDtWhCcpxzrZhA95f6zi0pnBsjBEZW1LKZWfxVXG0UfaWpPxDBCKowNk2xjRTytckZeVhjmPJPtBU+8QNQcR0A=="
   "resolved" "https://registry.npmjs.org/@react-native-async-storage/async-storage/-/async-storage-1.17.7.tgz"
@@ -6135,6 +6140,11 @@
   dependencies:
     "react-freeze" "^1.0.0"
     "warn-once" "^0.1.0"
+
+"react-native-sound-player@^0.12.1":
+  "integrity" "sha512-jkJNz2c1dHV4nQMurR/3asYgZdZYzqmNNkyWmezxmwBBGPAUMiE7REoqUjSxumIOV5R0MzT8efBzl2f4d09iVQ=="
+  "resolved" "https://registry.npmjs.org/react-native-sound-player/-/react-native-sound-player-0.12.1.tgz"
+  "version" "0.12.1"
 
 "react-native-svg-transformer@^1.0.0":
   "integrity" "sha512-ALHU5VvLLyKM/BvyEG7VYJmqglvaXtU7mGRCxrEwwpJO/GBf1ZMUzc4AeJAjSodj7yYtlDYRxNSt9ySWpaa6JQ=="

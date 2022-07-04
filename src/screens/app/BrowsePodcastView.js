@@ -47,6 +47,11 @@ const BrowsePodcastView = props => {
         setLoading(false);
       });
   };
+  const podcastClicked = item => {
+    props.navigation.navigate('PodcastView', {
+      item: item,
+    });
+  };
 
   return (
     <View style={styles.container}>
@@ -89,7 +94,13 @@ const BrowsePodcastView = props => {
         <ScrollView>
           {pcastData.map(item => {
             return (
-              <PodcastListItem data={item} key={pcastData.indexOf(item)} />
+              <PodcastListItem
+                data={item}
+                key={pcastData.indexOf(item)}
+                onPress={() => {
+                  podcastClicked(item);
+                }}
+              />
             );
           })}
         </ScrollView>

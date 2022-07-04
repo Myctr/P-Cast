@@ -6,14 +6,14 @@ import {
   TouchableOpacity,
 } from 'react-native';
 import Text from './Text';
-import podcast_bg from '../../assets/png/podcast_bg.png';
+import podcast_list_bg from '../../assets/png/podcast_item_bg.png';
 import colors from '../styles/colors';
 import PlayIcon from './Icons/PlayIcon';
 
-const PodcastListItem = ({data}) => {
+const PodcastListItem = ({data, onPress}) => {
   return (
-    <TouchableOpacity>
-      <ImageBackground style={styles.background} source={podcast_bg}>
+    <TouchableOpacity onPress={onPress}>
+      <ImageBackground style={styles.background} source={podcast_list_bg}>
         <View style={styles.headerContainer}>
           <Text
             color={colors.white}
