@@ -11,13 +11,15 @@ import {
 import axios from 'axios';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 //COMPONENTS
-import {Logo} from '../../components/Logo';
-import Text from '../../components/Text';
-import TextInput from '../../components/TextInput';
-import EmailIcon from '../../components/Icons/EmailIcon';
-import PasswordIcon from '../../components/Icons/PasswordIcon';
-import Button from '../../components/Button';
-import ActivityIndicator from '../../components/ActivityIndicator';
+import {
+  Logo,
+  Text,
+  TextInput,
+  Button,
+  ActivityIndicator,
+} from '../../components';
+import {EmailIcon, PasswordIcon} from '../../components/Icons';
+
 //CONSTANTS
 import {base_url, login} from '../../constants/API_URL';
 //ASSETS

@@ -1,10 +1,13 @@
 import React from 'react';
-import {ActivityIndicator, StyleSheet} from 'react-native';
+import {
+  ActivityIndicator as ActivityIndicatorRn,
+  StyleSheet,
+} from 'react-native';
 import colors from '../styles/colors';
 
-const ActivityIndicatorA = () => {
+const ActivityIndicator = () => {
   return (
-    <ActivityIndicator
+    <ActivityIndicatorRn
       style={styles.container}
       color={colors.white}
       size="large"
@@ -22,4 +25,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default ActivityIndicatorA;
+export default ActivityIndicator;

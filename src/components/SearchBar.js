@@ -1,7 +1,12 @@
 import React from 'react';
-import {TextInput as TextInputRn, View, StyleSheet} from 'react-native';
+import {
+  TextInput as TextInputRn,
+  View,
+  TouchableOpacity,
+  StyleSheet,
+} from 'react-native';
 import colors from '../styles/colors';
-import SearchSvg from '../../assets/svg/search.svg';
+import {SearchIcon} from './Icons';
 const SearchBar = props => {
   return (
     <View style={styles.container}>
@@ -14,10 +19,13 @@ const SearchBar = props => {
         placeholderTextColor={colors.placeholderText}
         autoCapitalize={true}
         returnKeyType="search"
+        onEndEditing={props.onEndEditing}
       />
-      <View style={styles.iconContainer}>
-        <SearchSvg />
-      </View>
+      <TouchableOpacity
+        style={styles.iconContainer}
+        onPress={props.onEndEditing}>
+        <SearchIcon />
+      </TouchableOpacity>
     </View>
   );
 };
